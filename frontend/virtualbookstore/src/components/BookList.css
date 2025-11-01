@@ -1,0 +1,105 @@
+.book-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  margin-top:300px;
+}
+
+.book-card {
+  flex: 1 1 calc(25% - 40px); 
+  max-width: 280px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.book-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.book-card h3 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.book-card p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.price {
+  color: #2c7a7b;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.actions button {
+  flex: 1;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.actions .add {
+  background-color: #007bff;
+  color: white;
+}
+
+.actions .add:hover {
+  background-color: #0056b3;
+}
+
+.actions .buy {
+  background-color: #28a745;
+  color: white;
+}
+
+.actions .buy:hover {
+  background-color: #1e7e34;
+}
+
+@media (max-width: 1200px) {
+  .book-card {
+    flex: 1 1 calc(33.33% - 40px);
+  }
+}
+
+@media (max-width: 768px) {
+  .book-card {
+    flex: 1 1 calc(50% - 40px); 
+  }
+}
+
+@media (max-width: 480px) {
+  .book-card {
+    flex: 1 1 100%; 
+  }
+}

@@ -1,0 +1,44 @@
+.checkout-container {
+  max-width: 500px;
+  margin: 80px auto;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.checkout-container h2 {
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.error-message {
+  color: #d9534f;
+  background: #ffe6e6;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.checkout-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.checkout-btn:hover {
+  background-color: #0056b3;
+}
+
+.checkout-btn:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+
